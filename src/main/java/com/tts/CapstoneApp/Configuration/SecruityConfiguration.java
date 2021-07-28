@@ -64,13 +64,13 @@ public class SecruityConfiguration extends WebSecurityConfigurerAdapter {
                         oAuth2UserService.processOAuthPostLogin(oAuth2User.getAttribute("sub"));
 
 
-                        response.sendRedirect("http://localhost:3000/");
+                        response.sendRedirect("https://movie-app-frontend-win.herokuapp.com/");
                     }
 
                 })
                 .and()
                 .logout()
-                .logoutSuccessUrl("http://localhost:3000/");
+                .logoutSuccessUrl("https://movie-app-frontend-win.herokuapp.com/");
 
 
     }
